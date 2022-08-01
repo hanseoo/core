@@ -21,11 +21,11 @@ public class OrderServiceImpl implements OrderService {
 
     // 1. 생성자주입
     // @Autowired가 없어도 bean을 상속받은 클래스는 등록할때 자동으로 생성자와 관련된 클래스를 주입한다
-//    public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
-//
-//        this.memberRepository = memberRepository;
-//        this.discountPolicy = discountPolicy;
-//    }
+    public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
+
+        this.memberRepository = memberRepository;
+        this.discountPolicy = discountPolicy;
+    }
 
     // 2. 수정자 주입(setter 주입)
 //    @Autowired
